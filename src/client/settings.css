@@ -1,0 +1,49 @@
+/* MyVault Settings upgrade — scoped styles only */
+.settings-section-label {
+  margin: 18px 0 2px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.settings-storage {
+  padding: 12px 0 16px;
+  border-top: 1px solid var(--line);
+}
+.settings-storage-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 9px;
+  font-size: 11px;
+}
+.settings-storage-meta strong { font-size: 11px; }
+.settings-storage .storage-track { height: 7px; margin-bottom: 7px; }
+.settings-storage .muted { display: block; font-size: 10px; }
+.settings-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 16px 0 0;
+}
+.settings-privacy-note svg { flex: 0 0 auto; margin-top: 1px; }
+.change-pin-card {
+  width: min(460px, 100%);
+  max-height: min(92dvh, 780px);
+  overflow-y: auto;
+}
+.change-pin-card .field-label { display: block; margin: 13px 0 7px; }
+.change-pin-card .text-input { margin-bottom: 2px; letter-spacing: .04em; }
+.change-pin-card select.text-input { letter-spacing: normal; }
+.change-pin-card .modal-heading .muted { max-width: 330px; margin-top: 7px; font-size: 11px; line-height: 1.5; }
+@media (max-width: 600px) {
+  .settings-card, .change-pin-card { width: 100%; max-height: 94dvh; overflow-y: auto; }
+  .settings-row { align-items: flex-start; }
+  .settings-row > button { flex: 0 0 auto; }
+  .settings-storage-meta { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .settings-footer { gap: 10px; flex-wrap: wrap; }
+}

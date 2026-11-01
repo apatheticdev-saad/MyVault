@@ -1,0 +1,44 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "myvault-personal-cloud",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-30",
+
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "myvault-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  "env": {
+   "production": {
+  "vars": {
+    "APP_ORIGIN": "https://YOUR-PRODUCTION-WORKER.workers.dev"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "myvault-production",
+      "database_id": "REPLACE_WITH_YOUR_PRODUCTION_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
+  },
+
+  "observability": {
+    "enabled": true
+  }
+  
+}
+
+

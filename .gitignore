@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Cloudflare / Wrangler local state
+.wrangler/
+
+# Local secrets and environment variables
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+!.env.example
+!.dev.vars.example
+
+# Temporary and private files
+TempData/
+*.sql
+*.dump
+*.backup
+*.bak
+*.log
+
+# Local editor / operating system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local backups
+*backup*/
+*backups*/
+
+# Historical installation notes (not part of current documentation)
+README.txt
+INSTALL.txt
+INSTALL-FIX.txt
+MILESTONE-2-PART-2-INSTALL.md
+.gitignore.backup
+
+# Temporary archives
+*.zip
+
+@'
+
+# Include application database migrations
+!migrations/
+!migrations/*.sql
+'@ | Add-Content .gitignore
