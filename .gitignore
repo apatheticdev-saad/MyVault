@@ -15,6 +15,7 @@ coverage/
 .env.*
 !.env.example
 !.dev.vars.example
+.futureworkflow.md
 
 # Temporary and private files
 TempData/
@@ -50,3 +51,5 @@ MILESTONE-2-PART-2-INSTALL.md
 !migrations/
 !migrations/*.sql
 '@ | Add-Content .gitignore
+
+futureworkflow.md
