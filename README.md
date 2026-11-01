@@ -48,11 +48,11 @@ The application backend runs on Cloudflare Workers, while Cloudflare D1 stores a
 
 ---
 
-## Screenshots
 
-Screenshots will be added here.
+## 📸 Screenshots
 
-*Use screenshots containing only sample data. Never publish personal files, email addresses, access tokens or private account information.*
+### Dashboard
+![MyVault Dashboard](screenshots/dashboard.png)
 
 ---
 
